@@ -1,13 +1,13 @@
 <div id="ordersPage">
   <div id="orderInfoContainer">
     <input id="nameLookUp" placeholder="Please Enter Your Name"><br>
-    <button ng-click="checkOrder()">Look Up Your Order</button>
+    <button id="checkOrderButton" ng-click="checkOrder()">Look Up Your Order</button>
   </div>
-  <div ng-repeat="order in customerOrder" class = "customerOrders">
+  <div ng-repeat="order in customerOrder" class="customerOrders">
     <span>Customer Name: {{order.name}}</span><br>
     <span>Items: {{order.items}}</span><br><span>Total is: {{order.total}}</span><br>
     <span>Scheduled Pick-Up Time: {{order.pickUpTime}}</span><br>
     <span>Order Placed Time: {{order.orderPlaceTime}}</span><br>
-    <span>{{order.ready}}</span><br>
+    <span id="orderReady">{{order.ready}}</span><br>
   </div>
 </div>

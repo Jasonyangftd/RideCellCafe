@@ -118,9 +118,42 @@ input {
   width: 80vmin;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 2vmin;
   padding-top: 2vmin;
   padding-bottom: 2vmin;
   text-align: center;
+}
+
+.customerOrders {
+  position: relative;
+  border-radius: 3vmin;
+  background-color: gray;
+  width: 80vmin;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3vmin;
+  padding-top: 2vmin;
+  padding-bottom: 2vmin;
+  text-align: center;
+}
+
+#nameLookUp {
+  width: 40vmin;
+  height: 3vmin;
+  left: 15vmin;
+}
+
+#checkOrderButton{
+  position: relative;
+  border-radius: 3vmin;
+  margin-top: 1vmin;
+  width: 30vmin;
+  height: 5vmin;
+  left: 15vmin;  
+}
+
+#orderReady{
+  color:red;
 }
 
 

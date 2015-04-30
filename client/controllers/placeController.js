@@ -124,13 +124,14 @@ angular.module('order.place', ['firebase'])
       return;
     }
     
+    order.ready = 'This order is not ready yet';
     var r = confirm("Please comfirm your order, click OK to place your order or cancel")
     if (r == true) {
       var orderID = order.name + order.orderPlaceTime;
       $scope.orders[orderID] = order;
-      $scope.orders.ready = 'This order is not ready yet';
       ref.set($scope.orders);
       alert('Your Order Have Been Placed!')
+      $scope.cancelOrder();
     } else {
 
     }
@@ -140,6 +141,16 @@ angular.module('order.place', ['firebase'])
     $scope.total -= itemPrice;
     $scope.total = Math.round($scope.total * 100) / 100;
     delete $scope.items[itemName];
+  }
+
+  $scope.cancelOrder = function(){
+    $scope.items = {};
+    $scope.total = 0;
+    $scope.tempStorage = {};
+    $scope.panda = true;
+    $scope.thai = true;
+    $scope.burger = true;
+    $scope.taco = true;
   }
 
 })
