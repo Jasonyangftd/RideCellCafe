@@ -1,0 +1,62 @@
+<div id="placePage">
+  <div id="storesContainer">
+    <div id="bestTaco">
+      <div class="storeName" ng-click="toggleMenu('taco')">Best Taco</div>
+      <div class="itemList" id="bestTacoItems" ng-hide="taco">
+        <li class="item">Beef Taco <button ng-click="addToOrder('A1')">$2.49 Add to My Order</button></li>
+        <li class="item">Fish Taco <button ng-click="addToOrder('A2')">$2.99 Add to My Order</button></li>
+        <li class="item">Best Taco <button ng-click="addToOrder('A3')">$3.49 Add to My Order</button></li>
+        <li class="item">Shirmp Taco <button ng-click="addToOrder('A4')">$2.99 Add to My Order</button></li>
+      </div>
+    </div>
+
+    <div id="kongFuPanda">
+      <div class="storeName" ng-click="toggleMenu('panda')">Kong Fu Panda</div>
+      <div class="itemList" id="kongFuPandaItems" ng-hide="panda">
+        <li class="item">Beef Rice <button ng-click="addToOrder('B1')">$7.99 Add to My Order</button></li>
+        <li class="item">Fish Rice <button ng-click="addToOrder('B2')">$8.99 Add to My Order</button></li>
+        <li class="item">Chicken Rice <button ng-click="addToOrder('B3')">$6.99 Add to My Order</button></li>
+        <li class="item">Spicy Noodle <button ng-click="addToOrder('B4')">$7.99 Add to My Order</button></li>
+      </div>
+    </div>    
+
+    <div id="luckyThai">
+      <div class="storeName" ng-click="toggleMenu('thai')">Lucky Thai</div>
+      <div class="itemList" id="luckyThaiItems" ng-hide="thai">
+        <li class="item">Grill Chicken<button ng-click="addToOrder('C1')">$8.99 Add to My Order</button></li>
+        <li class="item">Lucky Noodle<button ng-click="addToOrder('C2')">$9.49 Add to My Order</button></li>
+        <li class="item">Shirmp Rice<button ng-click="addToOrder('C3')">$9.99 Add to My Order</button></li>
+        <li class="item">Thai Combo<button ng-click="addToOrder('C4')">$9.99 Add to My Order</button></li>
+      </div>
+    </div>    
+
+    <div id="rideCellBurger">
+      <div class="storeName" ng-click="toggleMenu('burger')">RideCell Burger</div>
+      <div class="itemList" id="rideCellBurgerItems" ng-hide="burger">
+        <li class="item">Amazing Burger <button ng-click="addToOrder('D1')">$6.49 Add to My Order</button></li>
+        <li class="item">Best Burger <button ng-click="addToOrder('D2')">$5.99 Add to My Order</button></li>
+        <li class="item">Strange Burger <button ng-click="addToOrder('D3')">$6.99 Add to My Order</button></li>
+        <li class="item">Kings Burger <button ng-click="addToOrder('D4')">$7.99 Add to My Order</button></li>
+      </div>
+    </div>
+
+    <div id="placeOrderContainer">
+      <div id="orderContainer" ng-repeat="(name, price) in items" >
+        {{name}}<span> : $</span>{{price}} <button ng-click="removeItem(name, price)">Remove</button>
+      </div>
+
+      <div id="placeOrderButtons">
+        <p id="totalPrice">Total : $ {{total}}</p>
+
+        <div id="orderInfoContainer">
+          <input id="nameInput" placeholder="Please Enter Your Name"><br>
+          <input id="pickUpTimeInput" placeholder="Pick Up Time hh:mm">
+        </div>
+
+        <button class="placeOrderButton">Cancel</button>
+        <button class="placeOrderButton" ng-click="placeOrder()">Place Order</button>
+      </div>
+    </div>
+
+  </div>
+</div>

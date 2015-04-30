@@ -1,0 +1,139 @@
+.title {
+  background-image: url("/client/assets/titlePic.jpg");
+  color: orange;
+  height: 28vmin;
+  text-align: center;
+  width: 100vmin;
+  padding-top: 10vmin;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+#titleText {
+  font-size: 9vmin;
+}
+
+#selectionContainer{
+  position: relative;
+  margin-top: 5vmin;
+  width: 80vmin;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.selectionButtons {
+  display: inline-block;
+  padding-top: 1.5vmin;
+  width: 25vmin;
+  height: 5vmin;
+  font-size: 3vmin;
+  background-color: gray;
+  text-align: center;
+  border-radius: 3vmin;
+}
+
+.storeName {
+  background-color: gray;
+  border-radius: 3vmin;
+  margin-top: 5vmin;
+  color: orange;
+  height: 10vmin;
+  text-align: center;
+  width: 40vmin;
+  padding-top: 8vmin;
+  font-size: 4vmin;
+  position: relative;
+}
+
+.itemList {
+  position: absolute;
+  left: 45vmin;
+}
+
+#bestTacoItems{
+  top: 7vmin;
+}
+#kongFuPandaItems{
+  top: 30vmin;
+}
+#luckyThaiItems{
+  top: 52vmin;
+}
+#rideCellBurgerItems{
+  top: 75vmin;
+}
+
+.item {
+  margin-bottom: 1vmin;
+}
+
+button:hover { 
+  background-color: blue;
+  border-radius: 1vmin;
+}
+
+#placeOrderContainer {
+  position: absolute;
+  top: 1vmin;
+  right: 1vmin;
+  border-radius: 3vmin;
+  background-color: gray;
+  width: 35vmin;
+}
+
+#orderContainer{
+  position: relative;
+  top: 2vmin;
+  left: 2vmin;
+}
+
+#placeOrderButtons{
+  position: relative;
+  left: 2vmin;
+}
+
+#totalPrice{
+  margin-top: 5vmin;
+  font-size: 4vmin;
+}
+
+input {
+  position: relative;
+  margin-bottom: 1vmin;
+  left: 2vmin;
+  width: 27vmin;
+}
+
+.placeOrderButton{
+  position: relative;
+  margin-left: 2vmin;
+  margin-bottom: 1vmin;
+}
+
+.orders{
+  position: relative;
+  border-radius: 3vmin;
+  background-color: gray;
+  width: 80vmin;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2vmin;
+  padding-bottom: 2vmin;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

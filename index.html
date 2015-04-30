@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="order">
+  <head>
+    <title>Berkeley-Cafe-Order-System</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.14/angular-ui-router.min.js"></script>
+
+    <script src="https://cdn.firebase.com/js/client/2.2.2/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/angularfire/1.0.0/angularfire.min.js"></script>
+    <!-- Load CSS -->
+ <!--    <link rel='stylesheet' type='text/css' href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> 
+    <link rel='stylesheet' type='text/css' href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> -->
+    <link rel='stylesheet' type='text/css' href="style.css">
+  </head>
+
+  <body>
+    <div ui-view></div>
+
+<!--     // <script type="text/javascript" src='./dist/dependency.js'></script> -->
+    <script type="text/javascript" src='./client/controllers/ordersController.js'></script>
+    <script type="text/javascript" src='./client/controllers/placeController.js'></script>
+    <script type="text/javascript" src='./client/controllers/storesController.js'></script>
+    <script type="text/javascript" src='./client/controllers/homeController.js'></script>
+    <script type="text/javascript" src='./client/directives/directives.js'></script>
+    <script type="text/javascript" src='./app.js'></script>
+  </body>
+
+</html>

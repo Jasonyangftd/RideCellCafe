@@ -1,0 +1,12 @@
+<div id="ordersPage">
+  <div ng-repeat="(orderID, order) in orders" class="orders">
+    <span>Customer Name: {{order.name}}</span><br>
+    <span>Items: {{order.items}}</span><br><span>Total is: {{order.total}}</span><br>
+    <span>Scheduled Pick-Up Time: {{order.pickUpTime}}</span><br>
+    <span>Order Placed Time: {{order.orderPlaceTime}}</span><br>
+    <span>{{order.ready}}</span><br>
+    <button ng-click="readyOrder(orderID)">Ready</button>
+    <button ng-click="notReadyOrder(orderID)">Not Ready</button>
+    <button ng-click="completeOrder(orderID)">Completed</button>
+  </div>
+</div>
